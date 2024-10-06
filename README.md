@@ -1,0 +1,1 @@
+# kusonooyasumi.github.io
