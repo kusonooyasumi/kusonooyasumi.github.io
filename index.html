@@ -9,38 +9,76 @@ potential todo :
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content=" ">
-    <meta property="og:title" content="kuso no oyasumi">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-
-    <link rel="apple-touch-icon" href="./data/oya.ico">
-    <link rel="icon" href="./data/oya.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="./data/oya.ico" type="image/x-icon">
-
-    <title>kuso no oyasumi</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Your Title Here</title>
+</head>
+<body>
+    <section id="intro">
+        <h1 id="title">kuso no <span class="highlight">oyasumi</span></h1>
+        <p id="subtitle">security specialist | CySA+</p>
 
-    <script src="https://kit.fontawesome.com/8de8e72679.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="links">
-      <a target="_blank" href="https://github.com/kusonooyasumi"><i class="fa-brands fa-github-alt fa-2xl"></i></a>
-      <a target="_blank" href="https://x.com/kusonooyasumi"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
-      <a target="_blank" href="https://kus.ooo">
-        <svg height="32" width="48">
-          <text x="-7" y="28" style="fill: var( --front )" font-size="32">く</text>
-          <text x="14" y="29" style="fill: var( --front )" font-size="34">そ</text>
-        </svg>
-      </a>
-    </div>
-    <hr style="width: 100%; color: var( --front );">
-    <div id="blog"></div>
+        <div id="social-links">
+            <a href="https://github.com/kusonooyasumi" class="social-item" target="_blank">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12"></path>
+                </svg>
+                <span class="social-label">github</span>
+            </a>
+            <a href="https://x.com/kusonooyasumi" class="social-item" target="_blank">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153ZM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644Z"></path>
+                </svg>
+                <span class="social-label">x.com</span>
+            </a>
+            <a href="https://axonbox.net" class="social-item" target="_blank">
+                <svg class="social-icon" viewBox="0 0 40 45" fill="none" style="stroke: currentColor;">
+                    <path d="M11 6.42L20 11.62L29 6.42M11 37.58V27.2L2 22M38 22L29 27.2V37.58M2.54 11.92L20 22.02L37.46 11.92M20 42.16V22M38 30V14C37.9993 13.2986 37.8141 12.6096 37.4631 12.0023C37.112 11.395 36.6075 10.8907 36 10.54L22 2.54C21.3919 2.18893 20.7021 2.0041 20 2.0041C19.2979 2.0041 18.6081 2.18893 18 2.54L4 10.54C3.39253 10.8907 2.88796 11.395 2.53692 12.0023C2.18589 12.6096 2.00072 13.2986 2 14V30C2.00072 30.7015 2.18589 31.3904 2.53692 31.9977C2.88796 32.605 3.39253 33.1093 4 33.46L18 41.46C18.6081 41.8111 19.2979 41.9959 20 41.9959C20.7021 41.9959 21.3919 41.8111 22 41.46L36 33.46C36.6075 33.1093 37.112 32.605 37.4631 31.9977C37.8141 31.3904 37.9993 30.7015 38 30Z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="social-label">axonbox</span>
+            </a>
+            <a href="mailto:kusonooyasumi@protonmail.com" class="social-item">
+                <svg class="social-icon" viewBox="0 0 48 48" fill="none" style="stroke: currentColor;">
+                    <path d="M44 12C44 9.8 42.2 8 40 8H8C5.8 8 4 9.8 4 12M44 12V36C44 38.2 42.2 40 40 40H8C5.8 40 4 38.2 4 36V12M44 12L24 26L4 12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="social-label">email</span>
+            </a>
+        </div>
 
-    <div id="tagline">by : <a href="https://kuso.day" class="sparkle">day</a></div>
-  </body>
-  <script src="script.js"></script>
+        <p id="currently">currently securing:</p>
+        <div id="projects">
+            <img src="/data/images/kusologo.png" class="project-img">
+            <img src="/data/images/axonlogo.png" class="project-img">
+            <img src="/data/images/sgslogo.png" class="project-img">
+        </div>
+        <p id="others">& others</p>
+    </section>
+
+    <main id="blog">
+      <h1 id="blogtitle">articles</h1>
+      <div class="blog-post" onclick="toggleExpand(this)">
+          <h2>Resolving Subdomains: A Practical Guide</h2>
+          <p>A lot of people are wasting time when it comes to finding out which subdomains are alive, I've seen and used a lot of different methods checking which subdomains are alive, most recently i was using Project Discovery's httpx to determine which subdomains have content, this method was effective but was not conducive to scripting and i felt it could be improved. The following following is a quick guide on effective subdomain resolution</p>
+          <a href="/articles/A001.html" class="full-article" onclick="event.stopPropagation()">Full Article →</a>
+      </div>
+      <div class="blog-post" onclick="toggleExpand(this)">
+          <h2>Coming Soon</h2>
+          <p>In Progress:</p>
+      </div>
+  </main>
+
+  <script>
+      function toggleExpand(element) {
+          const allPosts = document.querySelectorAll('.blog-post');
+          allPosts.forEach(post => {
+              if (post !== element && post.classList.contains('expanded')) {
+                  post.classList.remove('expanded');
+              }
+          });
+          element.classList.toggle('expanded');
+      }
+  </script>
+</body>
 </html>
