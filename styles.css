@@ -99,6 +99,10 @@
 .link-at-top:hover {
     background-color: #a80000;
 }
+
+.link-at-top:visited {
+    color: #cc0000;
+}
   
   /* Intro Section */
   #intro {
