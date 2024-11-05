@@ -83,6 +83,9 @@
     background-color: #333;
   }
   
+.link-at-top {
+    color: #cc0000;
+}
 
 .link-at-top:hover {
     color: #ff4444;
