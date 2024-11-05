@@ -83,6 +83,23 @@
     background-color: #333;
   }
   
+  .link-at-top {
+    display: block;
+    background-color: #cc0000;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Mono', monospace;
+    transition: background-color 0.2s ease;
+    position: absolute;
+    top: 5%;
+}
+
+.link-at-top:hover {
+    background-color: #a80000;
+}
+  
   /* Intro Section */
   #intro {
     height: 100vh;
