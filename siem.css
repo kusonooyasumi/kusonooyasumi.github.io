@@ -13,26 +13,7 @@ body {
     position: relative;
 }
 
-.home-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 55px;
-    height: 55px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: border-color 0.3s;
-    color: #666666;
-    text-decoration: none;
-}
 
-.home-button:hover {
-    border-color: #ff3333;
-    color: #ff3333;
-}
 
 .container {
     padding: 2rem;
@@ -93,3 +74,56 @@ h1 {
     font-size: 0.8rem;
     color: #cccccc;
 }
+
+  /* Navigation Styles */
+  .siem-button {
+    position: fixed;
+    top: 33px;
+    left: 37px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    z-index: 100;
+  }
+  
+  .aboutme-button {
+    position: fixed;
+    top: 25px;
+    right: 0px;
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    z-index: 100;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .nav-button {
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-label {
+    font-size: 0.9rem;
+    color: var(--front);
+    position: relative;
+  }
+
+  .nav-button:hover {
+    background-color: #333;
+  }
