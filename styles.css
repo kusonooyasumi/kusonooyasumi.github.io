@@ -267,11 +267,6 @@
     color: var(--accent);
   }
   
-  /* Accessibility */
-  a:focus {
-    outline: 2px solid var(--accent);
-  }
-  
   /* Responsive Adjustments */
   @media (max-width: 600px) {
     #social-links {
