@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/../blog.css">
+</head>
+<body>
+    <div class="nav-buttons">
+        <button class="back-button" onclick="window.location.href='/../index.html'">back</button>
+        <button class="share-button" onclick="copyLink()">
+            share
+            <span class="share-tooltip">Link copied!</span>
+        </button>
+    </div>
 
+    <div class="header">
+        <div class="title">Resolving Subdomains:<br> A Practical Guide</div>
+        <div class="metadata">
+            published: 10.22.24 18:24<br>
+            last modified: 10.22.24 18:24
+        </div>
+    </div>
+
+    <div class="thesis">
+        A lot of people are <span class="highlight">wasting time</span> when it
+        comes to finding out which subdomains are alive, 
+        I've seen and used a lot of different methods 
+        checking which subdomains are alive, most recently 
+        i was using Project Discovery's httpx to 
+        determine which subdomains have content, this 
+        method was effective but was not conducive to 
+        scripting and I felt it could be improved. The following 
+        following is a quick guide on effective subdomain resolution
+    </div>
+
+    <div class="content">
+        <span class="dropcap">S</span>ome more words and stuff, but like repeated ya know Some
+        more words and stuff, but like repeated ya know Some more
+        words and stuff, but like repeated ya know Some more words
+        and stuff, but like repeated ya know Some more words and
+        stuff, but like repeated ya know Some more words and stuff,
+        but like repeated ya know Some more words and stuff, but like
+        repeated ya know Some more words and stuff, but like repeated
+        ya know Some more words and stuff, but like repeated ya know
+        Some more words and stuff, but like repeated ya know Some
+        more words and stuff, but like repeated ya know Some more
+    </div>
+
+    <div id="social-links">
+        <a href="https://x.com/kusonooyasumi" class="social-item" target="_blank">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153ZM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644Z"></path>
+            </svg>
+            <span class="social-label">x.com</span>
+        </a>
+        <a href="mailto:oyasumi@hackerforhire.xyz" class="social-item">
+            <svg class="social-icon" viewBox="0 0 48 48" fill="none" style="stroke: currentColor;">
+                <path d="M44 12C44 9.8 42.2 8 40 8H8C5.8 8 4 9.8 4 12M44 12V36C44 38.2 42.2 40 40 40H8C5.8 40 4 38.2 4 36V12M44 12L24 26L4 12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="social-label">email</span>
+        </a>
+    </div>
+
+    <script>
+        function copyLink() {
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                // Show tooltip
+                const tooltip = document.querySelector('.share-tooltip');
+                tooltip.style.opacity = '1';
+                
+                // Hide tooltip after 2 seconds
+                setTimeout(() => {
+                    tooltip.style.opacity = '0';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
